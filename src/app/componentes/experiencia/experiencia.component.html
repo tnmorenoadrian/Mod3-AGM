@@ -1,0 +1,21 @@
+<!-- Experiencia -->
+<div class="card mat-card" id="experiencia">
+    <div id="experiencie">
+       <div class="card-titles">
+         <h1 style="margin-left: 20px;">Experiencia</h1>
+       </div>
+       <div>
+         <ul class="items-list">
+          <li *ngFor="let experiencia of experienciaList">
+            <div class="btn-edit" id="experiencia">
+              <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+            </div>
+            <img [src]="experiencia.img" />
+            <h2>{{experiencia.name}}</h2>
+            <p>{{experiencia.info}}</p>
+          </li>
+        </ul>
+       </div>
+    </div>
+</div>      
+

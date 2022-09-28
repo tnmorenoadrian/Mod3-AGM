@@ -1,0 +1,29 @@
+<!--Acerca de-->
+<div class="card mat-card" id="acerca">
+    <div class="row">
+      <!-- imagen profile -->
+      <div class="col-md-3" id="info-img">
+         <img class="profile-image" *ngIf="miPortfolio" [src]="miPortfolio.profileImage"/>
+         <div class="btn-edit" id="profile-img">
+          <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+        </div>
+         <div id="separador"> </div>
+         <div class="btn-edit" id="profile-info">
+          <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+         </div>
+         <div id="info-titulo"><h2>{{miPortfolio&&miPortfolio.name}}</h2></div>
+         <div id="info-titulo">{{miPortfolio&&miPortfolio.titulo}}</div>
+      </div>
+       
+         <div class="col-md-9" id="acerca">
+          <h1 style="margin-left: 0px;">Acerca de</h1>
+          <div class="btn-edit" id="acerca">
+            <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+           </div>
+          <div>
+            {{miPortfolio&&miPortfolio.acercaInfo}}
+          </div>
+         </div>        
+    </div>
+</div>
+

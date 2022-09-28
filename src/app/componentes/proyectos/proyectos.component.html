@@ -1,0 +1,21 @@
+<!-- Proyectos-->
+<div class="card mat-card" id="proyectos">
+    <div class="card-titles">
+      <h1 style="margin-left: 20px;">Proyectos</h1>
+    </div>
+    <div id="list-projets">
+      <ul class="items-list-projet">
+       <li *ngFor="let proyectos of proyectosList">
+        <div class="btn-edit" id="proyectos">
+          <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+        </div>           
+         <h2>{{proyectos.name}}</h2>
+         <p>{{proyectos.info}}</p>
+         <a href="https://argentinaprograma.inti.gob.ar/">
+           <img alt="Portfolio Web" [src]="proyectos.img">
+        </a>
+       </li>
+     </ul>
+    </div>
+</div>    
+
